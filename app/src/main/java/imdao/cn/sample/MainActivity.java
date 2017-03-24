@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         rippleChoiceView = (RoundChoiceView) findViewById(R.id.choicview);
         rippleChoiceView.setEnabled(false);
-        rippleChoiceView = (RoundChoiceView) findViewById(R.id.choicview2);
-        rippleChoiceView.setOnCheckedChangeListener(new RoundChoiceView.OnCheckedChangeListener() {
+        RoundChoiceView rippleChoiceView2 = (RoundChoiceView) findViewById(R.id.choicview2);
+        rippleChoiceView2.setOnCheckedChangeListener(new RoundChoiceView.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RoundChoiceView view, boolean isChecked) {
                 Log.i("onCheckedChanged", "onCheckedChanged:" + isChecked);
