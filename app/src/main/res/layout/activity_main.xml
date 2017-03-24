@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#9E9E9E">
+
+    <imdao.cn.roundchoice.RoundChoiceView
+        android:id="@+id/choicview"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="16dp"
+        android:padding="2dp"
+        app:backgroundColor="#77000000"
+        app:borderColor="@android:color/white"
+        app:checked="true"
+        app:checkedColor="@color/green"
+        app:crossColor="@android:color/white"
+        app:crossType="number"
+        app:number="2"
+        app:rippleBorderWidth="2dp"
+        app:rippleduration="300"
+        app:textSize="18sp" />
+    <imdao.cn.roundchoice.RoundChoiceView
+        android:id="@+id/choicview2"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="2dp"
+        android:clickable="true"
+        app:backgroundColor="#77000000"
+        app:borderColor="@android:color/white"
+        app:checked="false"
+        app:checkedColor="@color/green"
+        app:crossColor="@android:color/white"
+        app:crossType="cross"
+        app:number="2"
+        app:rippleBorderWidth="2dp"
+        app:rippleduration="300"
+        app:textSize="18sp" />
+
+    <imdao.cn.roundchoice.RoundChoiceView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="16dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="2dp"
+        android:clickable="true"
+        app:backgroundColor="@color/colorPrimary"
+        app:borderColor="@color/colorAccent"
+        app:checked="false"
+        app:checkedColor="@color/green"
+        app:crossColor="@android:color/holo_red_dark"
+        app:crossType="cross"
+        app:number="2"
+        app:rippleBorderWidth="2dp"
+        app:rippleduration="300"
+        app:textSize="18sp" />
+
+</LinearLayout>
+
+
