@@ -1,14 +1,14 @@
 # RoundChoiceView
 A widget for round shape choice view with number or cross indicator
 
-####先看下效果
+#### 先看下效果
 ![demo.gif](http://upload-images.jianshu.io/upload_images/2816392-5eac67fed1131ba9.gif?imageMogr2/auto-orient/strip)
-####说在前面的话
+#### 说在前面的话
 开发这个控件是因为在仿探探的图片选择器组件的时候，他们有这样的一个控件。照猫画虎，我也做了一个。
 想来，其实还是有很多的朋友需要这样的控件。
 所以开源出来给大家使用。
 
-####使用方式
+#### 使用方式
 项目放在gihub上，欢迎使用。
 github地址：https://github.com/klisly/RoundChoiceView
 已经发布到jitpack
@@ -23,8 +23,8 @@ github地址：https://github.com/klisly/RoundChoiceView
 依赖配置
     compile 'com.github.klisly:RoundChoiceView:v1.1'
 
-####设计步骤
-######1.定义样式属性
+#### 设计步骤
+###### 1.定义样式属性
 定义了控件的的属性有如下几个：
 borderColor：border的颜色
 backgroundColor：控件未选中状态的时候的背景颜色
@@ -53,7 +53,7 @@ textSize：数字的字体size
         <attr name="textSize" format="dimension" />
     </declare-styleable>
 
-######2.读取样式
+###### 2.读取样式
 这一步骤获取已经定义好的属性，并初始化所需要的画笔
 
  mDensity = getContext().getResources().getDisplayMetrics().density;
@@ -92,7 +92,7 @@ textSize：数字的字体size
         isHookShow = mChecked;
         mFraction = mChecked ? 1.0f : 0.0f;
 
-######3.确定尺寸
+###### 3.确定尺寸
 onSizeChanged方法回调的时候可以获得控件的最终尺寸，在此可以初始化
 勾的起点start，折点 middle，终点的坐标。
 
@@ -108,7 +108,7 @@ onSizeChanged方法回调的时候可以获得控件的最终尺寸，在此可�
         hookEnd = new PointF(mRectF.centerX() + mRadius / 2, mRectF.centerY() - mRadius * 1 / 3);
     }
 
-######4.绘制控件
+###### 4.绘制控件
 绘制逻辑：
   1.绘制未选中状态时的圆形和border
   2.绘制过渡状态的选中的圆形
@@ -191,7 +191,7 @@ onSizeChanged方法回调的时候可以获得控件的最终尺寸，在此可�
         }
     }
 
-######4.事件控制
+###### 4.事件控制
 1.在ACTION_DOWN时捕获事件
 2.在ACTION_UP中判断是否处理选中状态的监听，并处理动画的绘制
 
